@@ -4,10 +4,10 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class TMHApiApplication {
+public class Application {
 
     public static void main(String[] args) {
-        SpringApplication.run(TMHApiApplication.class, args);
+        SpringApplication.run(Application.class, args);
     }
 
 }
