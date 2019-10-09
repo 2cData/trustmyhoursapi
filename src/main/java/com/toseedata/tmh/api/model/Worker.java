@@ -13,14 +13,14 @@ import java.util.List;
 @Setter(AccessLevel.PUBLIC)
 @Getter(AccessLevel.PUBLIC)
 @Entity
-@Table(name = "worker")
+@Table(name = "WORKER")
 public class Worker extends Auditable<String> {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     @NotNull
-    @Column(unique = true)
+    @Column(name = "NAME", unique = true)
     private String name;
 
     @OneToOne(fetch = FetchType.LAZY)
